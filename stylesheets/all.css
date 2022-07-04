@@ -4847,7 +4847,7 @@ fieldset:disabled .btn {
   border-radius: var(--bs-card-border-radius);
   backdrop-filter: blur(4px);
   max-height:480px;
-  
+  box-shadow:0 0 8px rgba(240, 236, 230, 0.9);
 }
 .overflow{
   overflow: scroll;
