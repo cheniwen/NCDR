@@ -121,6 +121,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
+  font-weight: 900;
 }
 
 @media (min-width: 1200px) {
@@ -169,6 +170,11 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 1rem;
+  font-weight: 400;
+}
+p, .p {
+  font-size: 0.9rem;
+  color: #00498B;
 }
 
 .card-text {
@@ -176,7 +182,7 @@ h6, .h6 {
   margin-bottom: 1rem;
   font-size: 0.9rem;
   color: #333333;
-  
+  overflow: hidden;
 }
 
 abbr[title] {
@@ -4821,7 +4827,7 @@ fieldset:disabled .btn {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: rgba(250, 249, 246, 0.9);
+  --bs-card-bg: rgba(250, 249, 246, 0.8);
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -4839,7 +4845,13 @@ fieldset:disabled .btn {
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
+  backdrop-filter: blur(4px);
+  max-height:480px;
+  
 }
+.overflow{
+  overflow: scroll;
+} 
 
 .card > hr {
   margin-right: 0;
