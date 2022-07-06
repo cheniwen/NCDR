@@ -88,18 +88,113 @@
 }
 
 body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   margin: 0;
+  padding: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  /* background-color: var(--bs-body-bg); */
+  /* background-color: #FBFAF7; */
+  background-image: url(../img/bg.jpg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
 }
-
+#bg_earth{
+  width: 699px;
+  height: 630px;
+  left: 741px;
+  top: 136px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg_earth.png);
+}
+#bg_mountain_01{
+  position: absolute;
+  width: 632px;
+  height: 743px;
+  left: 0px;
+  top: 430px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg_mountain_01.png);
+  z-index: -1;
+}
+#bg_mountain_02{
+  position: absolute;
+  width: 279px;
+  height: 592px;
+  left: 1161px;
+  top: 1160px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg_mountain_02.png);
+}
+#bg_tree{
+  position: absolute;
+  width: 1440px;
+  height: 475px;
+  left: 0px;
+  top: 780px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg_tree.png);
+}
+#bg_cloud_01{
+  position: absolute;
+  width: 164px;
+height: 77px;
+left: 47px;
+top: 210px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg_cloud_01.png);
+  z-index: -1;
+}
+#bg_cloud_02{
+  position: absolute;
+  width: 101px;
+height: 55px;
+left: 162px;
+top: 413px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg_cloud_02.png);
+  z-index: -1;
+}
+#bg_cloud_03{
+  position: absolute;
+  width: 102px;
+height: 57px;
+left: 531.97px;
+top: 400px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/bg_cloud_03.png);
+  z-index: -1;
+}
+#bg_river{
+  position: fixed;
+  /* width: 1440px;
+height: 244px;
+left: 2.7px;
+top: 1366px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/river.png); */
+}
+.logoforrwd{
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 hr {
   margin: 1rem 0;
@@ -159,7 +254,7 @@ h4, .h4 {
   display: flex;
   position:relative;
   font-size: calc(1rem + 0.1vw);
-  background: linear-gradient(to bottom,#00498B,rgba(0,73,139,0.7));;
+  background: linear-gradient(to bottom,#00498B,rgba(0,73,139,0.7));
   max-width: 579px;
   color: #fff;
   font-weight: 400;
@@ -171,7 +266,7 @@ h4, .h4 {
 @media (min-width: 768px) {
   h4, .h4 {
     width: 579px;
-    background: linear-gradient(to right,#00498B,rgba(0,73,139,0.7));;
+    background: linear-gradient(to right,#00498B,rgba(0,73,139,0.7));
     color: #fff;
     box-shadow:0 0 8px rgba(231, 227, 220, 0.9);
     text-align:left;
@@ -189,10 +284,17 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem;
   font-weight: 400;
+  text-align:center;
+}
+@media (min-width: 768px) {
+  h6, .h6 {
+    text-align:left;
+    text-shadow:0 0 10px rgba(231, 227, 220, 0.8);
+  }
 }
 p, .p {
   font-size: 0.9rem;
-  color: #00498B;
+  color: #fff;
 }
 
 .card-text {
@@ -4865,7 +4967,7 @@ fieldset:disabled .btn {
   border-radius: var(--bs-card-border-radius);
   backdrop-filter: blur(4px);
   max-height:480px;
-  box-shadow:0 0 8px rgba(240, 236, 230, 0.9);
+  box-shadow:0 0 15px rgba(240, 236, 230, 0.9);
 }
 .overflow{
   overflow: scroll;
@@ -7935,14 +8037,7 @@ fieldset:disabled .btn {
   
 } */
 
-#ownbg{
-  
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-image: url(../img/bg.jpg);
-}
+
 
 .fixed-bottom {
   position: fixed;
@@ -9441,7 +9536,8 @@ fieldset:disabled .btn {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  /* background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; */
+  background: linear-gradient(to bottom,#00498B,rgba(0,73,139,0.7));
 }
 
 .bg-black {
