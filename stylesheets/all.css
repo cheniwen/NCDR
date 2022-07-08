@@ -122,28 +122,41 @@ body {
   width: 632px;
   height: 743px;
   left: 0px;
-  top: 430px;
+  top: 400px;
   margin: 0;
   padding: 0;
   background-image: url(../img/bg_mountain_01.png);
   z-index: -2;
+}
+@media (max-width: 1024px) {
+  
+  #bg_mountain_01{
+    display: none;
+  }
 }
 #bg_mountain_02{
   position: absolute;
   width: 279px;
   height: 592px;
   right: 0px;
-  top: 1160px;
+  top: 970px;
   margin: 0;
   padding: 0;
   background-image: url(../img/bg_mountain_02.png);
 }
+@media (max-width: 768px) {
+  
+  #bg_mountain_02{
+    display: none;
+  }
+}
+
 #bg_tree{
   background-size: cover;
   position: absolute;
   width: 100%;
   height: 475px;
-  top: 780px;
+  top: 770px;
   margin: 0;
   padding: 0;
   background-image: url(../img/bg_tree.png);
@@ -4968,17 +4981,21 @@ fieldset:disabled .btn {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
   backdrop-filter: blur(4px);
-  max-height:480px;
+  max-height:450px;
+  min-height: 450px;
   box-shadow:0 0 15px rgba(230, 226, 220, 0.9);
+  margin: 10px;
 }
 .overflow{
   overflow: scroll;
 } 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .card{
+    min-height: 480px;
     max-height:480px;
   }
 }
+
 
 .card > hr {
   margin-right: 0;
