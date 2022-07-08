@@ -8,12 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./stylesheets/all.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
 <div>
     <!-- 背景物件 -->
-    <div id="bg_earth" class="fixed-top rellax " 
+    <div id="bg_earth" class="sm-purple rellax " 
           data-rellax-speed="2" 
           data-rellax-xs-speed="2" 
           data-rellax-mobile-speed="2" 
@@ -82,13 +83,13 @@
     </nav>
 
     <div class="p-4 pb-5 mb-5"></div>
-    <div class="container p-4 pb-5 mb-5">
+    <div class="container p-4 pb-5 mb-5 wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="0.18s">
         <h1>減災及調適方法的擬定與推動<br>是面對災害挑戰最佳對策</h1>
         <h4 class="p-3 py-2 mt-3 mb-5 gradient">本網頁網羅了災防科技中心相關網站提供你最佳減災調適規劃工具。</h4>
     </div>
-    <div class="autoplay">
-        <div class="p-5 container mt-5">
-            <a class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="p-5 container mt-5">
+      <div class="row row-cols-1 row-cols-md-1 g-4">
+          <div class="autoplay" style="margin: auto">
                 <!-- 1.全球災害事件簿 -->
                 <div class="col">
                     <div class="card h-100">
@@ -97,7 +98,7 @@
                             <h5 class="card-title text-center">全球災害事件簿</h5>
                             <p class="card-text p-3 pt-1 pb-0 ">
                                 從災害中學習是防災工作的背景知識，網站透過健全及典藏歷史天然災害紀錄，展示歷年來收集與分析的國內外天然災害事件資料。提供防災工作者鑑古知今，豐富災害的知識，網站內容包含：國內及國際重大災害事件，種類為颱洪、地震、山崩、海嘯、熱浪、野火、低溫、船難及乾旱等項目，災害事件數高達2,000場。</p>
-                            <!-- <a href="#" class="stretched-link">more</a> -->
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
@@ -109,7 +110,7 @@
                             <h5 class="card-title text-center">三維災害潛勢地圖</h5>
                             <p class="card-text p-3 pt-1 pb-0">
                                 臺灣暴露在地震、颱風、豪雨等天然災害的威脅中，而認識環境中的災害特性，是每個人應具備的能力。災防科技中心建置「三維災害潛勢地圖網站」提供全民認識各類災害潛勢分佈情況，進而學會避災、減災。網站內容包含：淹水潛勢、易崩塌區位、土石流潛勢溪流、斷層分佈、土壤液化評估及海岸地區的波浪威脅。</p>
-                            <!-- <a href="#" class="stretched-link">more</a> -->
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
@@ -121,40 +122,44 @@
                             <h5 class="card-title text-center">氣候變遷風險調適平台</h5>
                             <p class="card-text p-3 pt-1 pb-0">氣候變遷造成新型態災害風險，讓「氣候變遷災害風險調適平台(Dr.
                                 A)」帶你了解未來的變動的氣候趨勢與災害風險評估，以及可能面臨的淹水、坡地與乾旱災害風險圖資，查詢高風險區位，針對明日的災害提早規劃調適措施。</p>
+                            <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
                 <!-- 4.三維地下水資源 -->
-                <!-- <div class="col">
+                <div class="col">
                     <div class="card h-100">
                       <img src="img/icon04.svg" class="card-img-top p-5 pt-0 pb-0" alt="...">
                       <div class="card-body pt-0 pb-0 mb-4 overflow">
                         <h5 class="card-title text-center">三維地下水資源</h5>
                         <p class="card-text p-3 pt-1 pb-0">災防科技中心為有效掌握全臺地下水資源現況，彙整現有水文地質剖面圖、水文鑽井、水質、水位等調查與觀測成果，透過地下三維資料展示技術，提供使用者可視覺化了解地下水資源空間蘊藏區位。</p>
+                        <a href="#" class="stretched-link"></a>
                       </div>
                     </div>
-                </div> -->
+                </div>
                 <!-- 5.災害影像資料庫 -->
-                <!-- <div class="col">
+                <div class="col">
                     <div class="card h-100">
                       <img src="img/icon05.svg" class="card-img-top p-5 pt-0 pb-0" alt="...">
                       <div class="card-body pt-0 pb-0 mb-4 overflow">
                         <h5 class="card-title text-center">災害影像資料庫</h5>
                         <p class="card-text p-3 pt-1 pb-0">集結災防科技中心無人機空拍影像和勘災照片。以近年來流行色彩趨勢之概念，簡易災害影像資料庫搜尋平台，讓使用快速搜尋災害相關影像。UAV空拍影像遍布全台，一般勘災照片約千餘張。</p>
+                        <a href="#" class="stretched-link"></a>
                       </div>
                     </div>
-                </div> -->
+                </div>
                 <!-- 6.地形地貌圖 -->
-                <!-- <div class="col">
+                <div class="col">
                     <div class="card h-100">
                       <img src="img/icon06.svg" class="card-img-top p-5 pt-0 pb-0" alt="...">
                       <div class="card-body pt-0 pb-0 mb-4 overflow">
                         <h5 class="card-title text-center">地形地貌圖</h5>
                         <p class="card-text p-3 pt-1 pb-0">地形地貌是環境中的作用力、構造、地質材料等作用的結果，對於曾經發生或是未來潛在發生的自然災害事件有提示性。災防科技中心引入國際做法繪製第一幅地貌圖，可以深入的掌握環境的特性。網站內容包含：木柵、草屯、成功等示範區的地貌圖及其地形特徵解說書。</p>
+                        <a href="#" class="stretched-link"></a>
                       </div>
                     </div>
-                </div> -->
-            </a>
+                </div>
+              </div>
         </div>
     </div>
     <nav class="footerlogo navbar navbar-expand-lg bg-none m-4">
@@ -202,9 +207,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="./js/all.js"></script>
 <!-- javascript from rellax -->
 <script type="text/javascript" src="./js/rellax.js"></script>
+<script src="js/wow.js"></script>
 <!-- <script type="text/javascript" src="option.js"></script> -->
 <script>
     var rellax = new Rellax('.rellax', {

@@ -107,13 +107,15 @@ body {
   overflow-x: hidden;
 }
 #bg_earth{
+  position: absolute;
   width: 699px;
   height: 630px;
-  left: 741px;
+  right: 0px;
   top: 136px;
   margin: 0;
   padding: 0;
   background-image: url(../img/bg_earth.png);
+  z-index: -3;
 }
 #bg_mountain_01{
   position: absolute;
@@ -124,23 +126,23 @@ body {
   margin: 0;
   padding: 0;
   background-image: url(../img/bg_mountain_01.png);
-  z-index: -1;
+  z-index: -2;
 }
 #bg_mountain_02{
   position: absolute;
   width: 279px;
   height: 592px;
-  left: 1161px;
+  right: 0px;
   top: 1160px;
   margin: 0;
   padding: 0;
   background-image: url(../img/bg_mountain_02.png);
 }
 #bg_tree{
+  background-size: cover;
   position: absolute;
-  width: 1440px;
+  width: 100%;
   height: 475px;
-  left: 0px;
   top: 780px;
   margin: 0;
   padding: 0;
@@ -4967,7 +4969,7 @@ fieldset:disabled .btn {
   border-radius: var(--bs-card-border-radius);
   backdrop-filter: blur(4px);
   max-height:480px;
-  box-shadow:0 0 15px rgba(240, 236, 230, 0.9);
+  box-shadow:0 0 15px rgba(230, 226, 220, 0.9);
 }
 .overflow{
   overflow: scroll;
