@@ -170,35 +170,35 @@ body {
 #bg_cloud_01{
   position: absolute;
   width: 164px;
-height: 77px;
-left: 47px;
-top: 210px;
+  height: 77px;
+  left: 47px;
+  top: 210px;
   margin: 0;
   padding: 0;
   background-image: url(../img/bg_cloud_01.png);
-  z-index: -1;
+  z-index: -4;
 }
 #bg_cloud_02{
   position: absolute;
   width: 101px;
-height: 55px;
-left: 162px;
-top: 413px;
+  height: 55px;
+  left: 162px;
+  top: 413px;
   margin: 0;
   padding: 0;
   background-image: url(../img/bg_cloud_02.png);
-  z-index: -1;
+  z-index: -4;
 }
 #bg_cloud_03{
   position: absolute;
   width: 102px;
-height: 57px;
-left: 531.97px;
-top: 400px;
+  height: 57px;
+  left: 531.97px;
+  top: 400px;
   margin: 0;
   padding: 0;
   background-image: url(../img/bg_cloud_03.png);
-  z-index: -1;
+  z-index: -4;
 }
 @media (max-width: 1024px) {
   
@@ -5005,18 +5005,30 @@ fieldset:disabled .btn {
   min-height: 450px;
   box-shadow:0 0 10px rgba(230, 226, 220, 0.9);
   margin: 8px;
+} 
+
+@media (min-width: 1024px) {
+  .card{
+    min-height: 500px;
+    max-height:500px;
+  }
+}
+.cardicon{
+  align-items: center;
+  padding-bottom: -25px;
+  margin-bottom: -25px;
+}
+
+@media (min-width: 768px) {
+  .cardicon{
+    align-items: center;
+    padding-bottom: -10px;
+    margin-bottom: -10px;
+  }
 }
 .overflow{
   overflow: scroll;
-} 
-@media (min-width: 1024px) {
-  .card{
-    min-height: 480px;
-    max-height:480px;
-  }
 }
-
-
 
 /* Flashing */
 .hover13 figure:hover div {
