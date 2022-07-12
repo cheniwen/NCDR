@@ -101,7 +101,7 @@ body {
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   /* background-color: var(--bs-body-bg); */
-  /* background-color: #FBFAF7; */
+  background-color: #FBFAF7;
   background-image: url(../img/bg.jpg);
   background-size: cover;
   -webkit-text-size-adjust: 100%;
@@ -5030,6 +5030,8 @@ fieldset:disabled .btn {
 .overflow{
   overflow-y: scroll;
   overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
 }
 
 /* Flashing */
