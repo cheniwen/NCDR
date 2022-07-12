@@ -336,7 +336,8 @@ p, .p {
   margin-bottom: 1rem;
   font-size: 0.9rem;
   color: #333333;
-  overflow: hidden;
+
+  
 }
 
 abbr[title] {
@@ -5027,7 +5028,8 @@ fieldset:disabled .btn {
   }
 }
 .overflow{
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Flashing */
