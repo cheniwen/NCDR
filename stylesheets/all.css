@@ -5001,29 +5001,71 @@ fieldset:disabled .btn {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
   backdrop-filter: blur(4px);
-  max-height:450px;
-  min-height: 450px;
+  max-height:430px;
+  min-height: 430px;
   box-shadow:0 0 10px rgba(230, 226, 220, 0.9);
   margin: 8px;
+  padding-bottom: 12px;
 } 
 
 @media (min-width: 1024px) {
   .card{
-    min-height: 500px;
-    max-height:500px;
+    min-height: 475px;
+    max-height:475px;
   }
 }
 .cardicon{
+  max-height:350px;
+  max-width:350px;
+
   align-items: center;
-  padding-bottom: -25px;
-  margin-bottom: -25px;
+  margin-left: auto;
+    margin-right: auto;
+  padding-bottom: -10px;
+  margin-bottom: -10px;
 }
 
-@media (min-width: 768px) {
+@media (max-width:992px, min-width: 768px) {
   .cardicon{
+    max-height: 600px;
+  max-width: 600px;
+  min-width: 600px;
+  min-height: 600px;
     align-items: center;
-    padding-bottom: -10px;
-    margin-bottom: -10px;
+    padding-bottom: -30px;
+  margin-bottom: -30px;
+  }
+}
+@media (max-width: 768px) {
+  .cardicon{
+    height: 330px;
+  width: 330px;
+    align-items: center;
+    padding-bottom: -50px;
+    margin-bottom: -50px;
+    padding-top: -40px;
+    margin-top: -40px;
+  }
+}
+.cardicon02{
+  max-height:350px;
+  max-width:350px;
+  position: relative;
+  align-items: center;
+  margin-left: auto;
+    margin-right: auto;
+  padding-bottom: -10px;
+  margin-bottom: -10px;
+}
+@media (max-width: 768px) {
+  .cardicon02{
+    height: 330px;
+  width: 330px;
+    align-items: center;
+    padding-bottom: -35px;
+    margin-bottom: -35px;
+    padding-top: -20px;
+    margin-top: -20px;
   }
 }
 .overflow{
