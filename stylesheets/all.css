@@ -102,7 +102,6 @@ body {
   text-align: var(--bs-body-text-align);
   /* background-color: var(--bs-body-bg); */
   background-color: #FBFAF7;
-  background-image: url(../img/bg.jpg);
   background-size: cover;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -5028,11 +5027,30 @@ fieldset:disabled .btn {
   }
 }
 .overflow{
-  overflow-y: scroll;
+  overflow-y: overlay;
   overflow-x: hidden;
   scrollbar-width: thin;
-  scrollbar-color: blue orange;
 }
+
+  ::-webkit-scrollbar {
+    width: 11px;
+ }
+  ::-webkit-scrollbar-button {
+    background: transparent;
+    border-radius: 4px;
+ }
+  ::-webkit-scrollbar-track-piece {
+    background: transparent;
+ }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #F6F3E8;
+    border: 1px solid #F6F3E8;
+ }
+  ::-webkit-scrollbar-track {
+    box-shadow: transparent;
+ }
+
 
 /* Flashing */
 .hover13 figure:hover div {
