@@ -14,7 +14,7 @@ $(document).ready(function(){
                   slidesToScroll: 1,
                   infinite: true,
                   dots: true
-              }
+                }
           },
           {
               breakpoint: 768,
